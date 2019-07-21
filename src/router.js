@@ -5,16 +5,15 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue')
-    }
+  routes: [{
+    path: '/',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/GoodsList',
+    name: 'GoodsList',
+    component: () => import('./views/GoodsList.vue')
+  }
   ]
 })
